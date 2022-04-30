@@ -1,6 +1,6 @@
 # Shopify-Backend-Challenge
 ## API Documentation
-# Create:
+### Create:
 - **route**: /api/createInventory/
 - **description**: Add inventory item to DB
 - **request**: POST /api/createInventory/
@@ -14,7 +14,7 @@
         - **product**: product name
         - **amount**:  total amount of product left in inventory
 
-# Read:
+### Read:
 - **route**: /api/inventory
 - **description**: Get the non-deleted items from the DB (paginated with 10 items per index)
 - **request**: GET /api/inventory
@@ -40,7 +40,7 @@
         - **amount**:  total amount of product left in inventory
         - **_id_**: product id
 
-# Update:
+### Update:
 - **route**: /api/update/product/
 - **description**: Update the amount or product name
 - **request**: PATCH /api/update/product/
@@ -63,7 +63,7 @@
 - **response**: status code 200
     - **body**: Item deleted successfully
 
-# Delete:
+### Delete:
 - **route**: /api/delete/:itemId/
 - **description**: Permanently delete item from DB
 - **request**: DELETE /api/delete/:itemId/
