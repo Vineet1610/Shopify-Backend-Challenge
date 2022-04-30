@@ -75,3 +75,4 @@
 
 ## Instruction on how to test backend APIs
 - Frontend not available for all APIs so test the APIs using Postman by following this documentation and comments on code
+- App not deployed on Replit due to frontend not done completely so can use it on localhost
