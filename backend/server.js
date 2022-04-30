@@ -249,6 +249,8 @@ app.delete('/api/delete/:itemId/', (req, res) => {
         });
 });
 
+app.use(express.static('../frontend'));
+
 const PORT = process.env.PORT || 5000;
 createServer(app).listen(PORT, function(err){
     if (err) console.log(err);

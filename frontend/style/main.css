@@ -1,0 +1,48 @@
+html {overflow: -moz-scrollbars-vertical;}
+
+body {
+    background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #3C3D3F;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    height: 64px;
+}
+
+header #webname {
+    color: #395ea8;
+    text-decoration:none;
+    margin: 10px;
+    width:100%;
+    font-size:48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.empty-gallery {
+    color: gray;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+.empty-text {
+    border: 2px solid black;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align:center;
+}

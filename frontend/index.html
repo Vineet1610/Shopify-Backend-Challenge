@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>The Web Gallery</title>
+        <link href="style/main.css" rel="stylesheet" type="text/css"/>
+        <link href="style/form.css" rel="stylesheet" type="text/css"/>
+        <link href="style/images.css" rel="stylesheet" type="text/css"/>
+        <link href="style/comments.css" rel="stylesheet" type="text/css"/>
+        <!-- Code to remove favicon.ico error in console log taken from stack overflow
+        https://stackoverflow.com/questions/39149846/why-am-i-seeing-a-404-not-found-error-failed-to-load-favicon-ico-when-not-usin -->
+        <link href="#" rel="shortcut icon"> 
+    </head>
+
+    <body>
+        <header>
+            <a href="/" id="webname">Inventory</a>
+        </header>
+
+        <form class="image-form" id="add-item-form">
+            <div class="form_title">
+                <div class="hide-btn" id="add-item">Add Inventory Item</div>
+            </div>
+            <div class="image-details" id="create-form">
+                <input type="text" id="product-name" class="form_element" placeholder="Enter product name" required/>
+                <input type="text" id="amount" class="form_element" placeholder="Enter amount" required/>
+                <button type="submit" name="create" class="btn">Create Item</button>
+            </div>
+        </form>
+
+        <form class="image-form" id="edit-item-form">
+            <div class="form_title">
+                <div class="hide-btn" id="edit-item">Edit Inventory Item</div>
+            </div>
+            <div class="image-details" id="edit-form">
+                <input type="text" id="product-id" class="form_element" placeholder="Enter product id" required/>
+                <input type="text" id="product-name" class="form_element" placeholder="Enter product name" required/>
+                <input type="text" id="amount" class="form_element" placeholder="Enter amount" required/>
+                <button type="submit" name="edit" class="btn">Edit Item</button>
+            </div>
+        </form>
+
+        <div id="empty-text">
+            <div class="empty-gallery">No items in Inventory</div>
+            <!-- <div class="empty-gallery">Upload an image</div> -->
+        </div>
+
+        <div id="inventory-items">
+            <div id="items"></div>
+            <div id="arrows"></div>
+        </div>
+
+        <div id="recently-deleted">
+            <div id="itemDel"></div>
+        </div>
+        <!-- <div id="images-comments">
+            <div id="images"></div>
+            <div class="comment-page">Comments</div>
+            <form class="comment-form" id="add-comment-form">
+                <div class="form_title">
+                    <div id="comment-title">Add comments</div>
+                </div>
+                <div class="comment-details" id="comment-form">
+                    <input type="text" id="comment-author" class="form_element" placeholder="Enter author name" required/>
+                    <input type="text" id="comment" class="form_element" placeholder="Enter comment" required/>
+                    <div class="button">
+                        <button type="submit" class="comment-btn">Publish Comment</button>
+                    </div>
+                </div>
+            </form>
+            <div id="comments"></div>
+        </div> -->
+
+        <script src="js/api.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

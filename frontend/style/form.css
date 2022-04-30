@@ -1,0 +1,74 @@
+#create-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-form {
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+}
+
+.image-form .image-details {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    padding:20px 10px 10px 10px;
+}
+
+.image-form .form_title{
+    font-size:20px;
+    font-weight:bold;
+    margin:-20px -10px 10px -10px;
+    padding:10px 0px 10px 12px;
+    color: black;
+}
+
+.image-form .form_element{
+    margin-bottom:10px;
+    font-size: 20px;
+    border-radius:10px ;
+    padding:5px 10px 5px 10px;
+}
+
+/* This snippet of code was generated using: http://css3buttongenerator.com/ */
+
+.hide-btn {
+    border-radius:10px;
+    text-align:center;
+    font-size: 20px;
+    color: #3C3D3F;
+    background: #ffffff;
+    border: 2px #3C3D3F solid;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.hide-btn:hover {
+    background: #395ea8;
+    color: #ffffff;
+}
+
+.btn{
+    border-radius:10px;
+    text-align:center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3C3D3F;
+    background: #ffffff;
+    border: 2px #3C3D3F solid;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background: #395ea8;
+  color: #ffffff;
+}

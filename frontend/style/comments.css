@@ -1,0 +1,105 @@
+#add-comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    border: 2px black solid;
+}
+
+.comment-form .comment-details {
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px 10px 10px;
+}
+
+.comment-form .form_title{
+    font-size:20px;
+    font-weight:bold;
+    margin: 10px -10px -10px -10px;
+    padding:10px 0px 10px 24px;
+    color: black;
+}
+
+.comment-form .form_element{
+    margin-bottom:10px;
+    font-size: 20px;
+    border-radius:10px ;
+    padding:5px 10px 5px 10px;
+}
+
+.comment-form .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-page {
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid grey;
+}
+
+.comment-section .author-name {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #395ea8;
+}
+
+.comment-section .author-comment {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.comment-section .comment-date {
+    margin: 0px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+#arrows {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* This snippet of code was generated using: http://css3buttongenerator.com/ */
+
+.comment-btn {
+    border-radius:10px;
+    text-align:center;
+    font-size: 20px;
+    color: #3C3D3F;
+    background: #ffffff;
+    border: 2px #3C3D3F solid;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 300px;
+    font-weight: bold;
+}
+
+.comment-btn:hover {
+    background: #395ea8;
+    color: #ffffff;
+  }
