@@ -123,7 +123,7 @@ app.get("/api/deleted/inventory", (req, res) => {
 });
 
 // Update inventory items
-// Request body -> {productId: product id, 'product': product name}
+// Request body -> {productId: product id, 'product': product name, 'amount': amount of product}
 app.patch('/api/update/product/', (req, res) => {
     if(!('productId' in req.body))
     {
@@ -195,7 +195,7 @@ app.patch('/api/update/delete/', (req, res) => {
 });
 
 // Permanently delete item
-// Request body -> {productId: product id}
+// Request params -> {productId: product id}
 app.delete('/api/delete/:itemId/', (req, res) => {
     if(req.params.itemId === null || req.params.itemId === undefined)
     {
