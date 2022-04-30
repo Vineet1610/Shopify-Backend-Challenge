@@ -163,39 +163,6 @@ app.patch('/api/update/product/', (req, res) => {
     }
 });
 
-// update amount of the product
-// Request body -> {productId: product id, 'amount': total number of products}
-// app.patch('/api/update/amount/', (req, res) => {
-//     if(!('productId' in req.body))
-//     {
-//         return res.status(400).json({error: "No product ID sent in the body"});
-//     }
-//     if(!('amount' in req.body))
-//     {
-//         return res.status(400).json({error: "No product sent in the body"});
-//     }
-//     let productId = req.body.productId;
-//     let amountItem = parseInt(req.body.amount);
-//     console.log(amountItem);
-//     if ((amountItem !== null && amountItem !== undefined) && amountItem >= 0)
-//     {
-//         // Update amount of the item in inventory
-//         Inventory.updateOne({_id: productId}, {amount: amountItem})
-//             .exec()
-//             .then(() => {
-//                 return res.status(200).json({message: "Amount update successful"});
-//             })
-//             .catch((err) => {
-//                 console.log(err);
-//                 return res.status(500).json({error: err});
-//             });
-//     }
-//     else
-//     {
-//         return res.status(400).json({error: "Amount should not be null, undefined or less than 0"});
-//     }
-// });
-
 // Update delete of item
 // Request body -> {productId: product id, delete: true, deleteComment: why item is deleted}
 app.patch('/api/update/delete/', (req, res) => {
